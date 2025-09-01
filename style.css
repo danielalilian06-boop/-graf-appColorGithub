@@ -1,0 +1,91 @@
+body {
+    background: linear-gradient(135deg, #0000 0%, #0000 100%);
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#color-box {
+    width: 100%;
+    height: 150px;
+    border: 2px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.form-control-color {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.form-control-color:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.form-control-color::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.form-control-color::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+.form-range {
+    height: 1rem;
+    background-color: #e9ecef;
+    border-radius: 1rem;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.form-range::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    background: #0d6efd;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #0d6efd;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Colores personalizados para los thumbs */
+#red-slider::-webkit-slider-thumb, #red-slider::-moz-range-thumb {
+    background: #dc3545;
+}
+
+#green-slider::-webkit-slider-thumb, #green-slider::-moz-range-thumb {
+    background: #198754;
+}
+
+#blue-slider::-webkit-slider-thumb, #blue-slider::-moz-range-thumb {
+    background: #0d6efd;
+}
